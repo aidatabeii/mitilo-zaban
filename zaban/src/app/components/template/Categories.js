@@ -1,6 +1,7 @@
 import Image from "next/image";
 function Categories() {
-    return(<>
+    return (
+        <>
         <div> 
             <Image
             src={"/categories.png"}
@@ -10,8 +11,8 @@ function Categories() {
             priority
             />
              </div>
-             <div class="flex">
-             <div class="mx-20 my-20"> 
+             <div class="flex justify-between m-10 gap-5">
+             
                 <Image 
                 src={"/aida.png.png"}
                 width={619}
@@ -19,82 +20,98 @@ function Categories() {
                 alt="axs"
                 priority
                 />
-             </div>
-
-             <div class="flex">
-             <div class="my-20">
-             <span class="text-3xl"> کار با  </span> <span class="text-purple-700 text-3xl "> میتیلو </span>
-             <br></br>
-             <span class="text-3xl"> با چهار گام کوتاه آغاز میشود  </span>
-             </div>
-        
-        <div class=" my-80 flex">
-            <div>
-            <div>
+              <div class="flex justify-between flex-col">
+          <h1 className="text-3xl gap-1 flex w-full ">
+            <div className="flex gap-1 items-center py-14 ">
+                <span> کار با </span>
+              
+              <span className="font-extrabold text-4xl text-purple-600">میتیلو</span>
+               </div>
+              <div/>
+              
+              <div className="flex gap-1 items-center py-20">
+              <span className="font-medium" > با چهار گام کوتاه آغاز میشود</span>
+            </div>
+          </h1>{" "}
+          <div class=" flex-wrap gap-4 grid grid-cols-2">
+            <div className="flex flex-col gap-2">
+            <div className="flex items-center gap-2 ">
             <Image
-            src={"/1.png"}
-            width={22}
-            height={22}
-            alt="logo"
-            priority
-            />
-            <span class="text-2xl"> رزرو کلاس </span>
-            
-            <br></br>
-           <span> با استاد های مختلف کلاس  آزمایشی برگزار کن و </span>
-            
-            <span> اولین کلاس انلاین  زبان را از تقویم میتیلو رزور کن. </span>
+                  src={"/1.png"}
+                  width={22}
+                  height={22}
+                  alt="logo"
+                  priority
+                />
+              <h3 class="text-xl font-medium "> رزرو کلاس </h3>
+              </div>
+              <p>
+                با استاد های مختلف کلاس آزمایشی برگزار کن و اولین کلاس انلاین
+                زبان را از تقویم میتیلو رزور کن.
+              </p>
             </div>
-            <div>
-            <Image
-            src={"/2.png"}
-            width={22}
-            height={22}
-            alt="logo"
-            priority
-            />
-            <span class="text-2xl"> انتخاب استاد </span>
-            <br></br>
-            <span> با استاد های مختلف کلاس آزمایشی برگزار کن و </span>
-           
-            <span> اولین کلاس انلاین  زبان را از تقویم میتیلو رزور کن. </span>
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-2 ">
+                <Image
+                  src={"/2.png"}
+                  width={22}
+                  height={22}
+                  alt="logo"
+                  priority
+                />
+                <h3 class="text-xl font-medium"> انتخاب استاد </h3>
+              </div>
+              <p>
+                با استاد های مختلف کلاس آزمایشی برگزار کن و اولین کلاس انلاین
+                زبان را از تقویم میتیلو رزور کن.
+              </p>
             </div>
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-2">
+                <Image
+                  src={"/3.png"}
+                  width={22}
+                  height={22}
+                  alt="logo"
+                  priority
+                />
+                <h3 class="text-xl font-medium"> شروع یادگیری </h3>
+              </div>
+              <p>
+                اولین کلاس انلاین زبان را از تقویم میتیلو رزور کن.با استاد های
+                مختلف کلاس آزمایشی برگزار کن و
+              </p>
             </div>
-            <div>
-            <div >
-            <Image
-            src={"/3.png"}
-            width={22}
-            height={22}
-            alt="logo"
-            priority
-            />
-            <span class="text-2xl"> شروع یادگیری </span>
-            <br></br>
-            <span> با استاد های مختلف  کلاس آزمایشی برگزار کن و </span>
-            
-            <span> اولین کلاس انلاین  زبان را از تقویم میتیلو رزور کن. </span>
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-2">
+                <Image
+                  src={"/4.png"}
+                  width={22}
+                  height={22}
+                  alt="logo"
+                  priority
+                />
+                <h3 class="text-xl font-medium"> دانلود کلاس </h3>
+              </div>
+              <p>
+                با استاد های مختلف کلاس آزمایشی برگزار کن و اولین کلاس انلاین
+                زبان را از تقویم میتیلو رزور کن.
+              </p>
             </div>
-            <div>
-            <Image
-            src={"/4.png"}
-            width={22}
-            height={22}
-            alt="logo"
-            priority
-            />
-            <span class="text-2xl"> دانلود کلاس </span>
-            <br></br>
-            <span> با استاد های مختلف  کلاس آزمایشی برگزار کن و </span>
-            
-            <span> اولین کلاس انلاین  زبان را از تقویم میتیلو رزور کن. </span>
-            </div>
-            </div>
+          </div>
+          <div>
+          <button class="text-white bg-purple-500 rounded-xl text-xs p-4"> همین الان شروع کن ! </button>
+          </div>
+           </div>
         </div>
-
-    </div>
-</div>
-</>
+         
+        </>
     )
 }
+  
+
 export default Categories;
+            
+        
+        
+
